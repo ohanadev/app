@@ -15,7 +15,7 @@
         w.performance.now=(function(){var n=Date.now?Date.now():+(new Date());return n-s})}
         w.performance.mark||(w.performance.mark=w.performance.webkitMark?w.performance.webkitMark:(function(l){marks.push({'name':l,'entryType':'mark','startTime':w.performance.now(),'duration':0})}));w.performance.getEntriesByType||(w.performance.getEntriesByType=w.performance.webkitGetEntriesByType?w.performance.webkitGetEntriesByType:(function(t){return t=='mark'?marks:undefined}))})();window.markUserTime=function(l){var raf=window.requestAnimationFrame||(function(callback){setTimeout(callback,0)});raf(function(){window.performance.mark(l);if(window.console&&console.timeStamp)
         console.timeStamp(l)})};</script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src=responseweb-jquery-bundle-min.2c54a56b.js><\/script>')</script>
         <script src="responseweb-response-bundle-min.55ab8be7.js"></script>
     </head>
@@ -113,7 +113,7 @@
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+        })(window,document,'script','analytics.js','ga');
         ga('create', 'UA-56526-1', 'auto');
         ga('send', 'pageview');
         </script>
